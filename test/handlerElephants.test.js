@@ -38,12 +38,6 @@ describe('Testes da função HandlerElephants', () => {
     expect(actual).toEqual(expected);
   });
 
-  it('verifica se a função é case sensitive', () => {
-    const actual = handlerElephants('Availability');
-    const expected = null;
-    expect(actual).toBe(expected);
-  });
-
   it('retorna null ao receber um parâmetro inválido', () => {
     const actual = handlerElephants('');
     const expected = null;
@@ -52,5 +46,11 @@ describe('Testes da função HandlerElephants', () => {
   it('não passando argumentos retorna undefined', () => {
     const actual = handlerElephants();
     expect(actual).toBe(undefined);
+  });
+
+  it('verifica se a função é case sensitive', () => {
+    const actual = handlerElephants('Availability');
+    const expected = null;
+    expect(actual).toBe(expected);
   });
 });
