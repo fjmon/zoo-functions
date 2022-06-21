@@ -53,4 +53,10 @@ describe('Testes da função HandlerElephants', () => {
     const expected = null;
     expect(actual).toBe(expected);
   });
+
+  it('testa a função caso o parametro não seja string', () => {
+    const actual = handlerElephants(5);
+    const expected = 'Parâmetro inválido, é necessário uma string';
+    expect(actual).toBe(expected);
+  });
 });
